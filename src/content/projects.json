@@ -4,7 +4,7 @@
             "name": "Snake Game",
             "gif": "./media/snake.gif",
             "repo": "https://github.com/MiernikA/Snake-Game",
-            "desc": "123Snake Game is essentially my first encounter with programming, created as part of Client-Side Application classes. The project is based on a simple interval that changes the styles of div elements according to the 'movement' of the snake, randomly generates the position of the fruit on the board, and uses a straightforward collision mechanism involving the use of element classes. I must admit that its presence here is primarily due to nostalgia.",
+            "desc": "Snake Game is essentially my first encounter with programming, created as part of Client-Side Application classes. The project is based on a simple interval that changes the styles of div elements according to the 'movement' of the snake, randomly generates the position of the fruit on the board, and uses a straightforward collision mechanism involving the use of element classes. I must admit that its presence here is primarily due to nostalgia.",
             "checkout": "https://miernika.github.io/Snake-Game/",
             "tags": [
                 "#highschool-project",

@@ -7,6 +7,7 @@ function MainSite() {
 
   return (
     <div className="MainSite">
+
       <NavBar />
       <BlockSite />
     </div>
