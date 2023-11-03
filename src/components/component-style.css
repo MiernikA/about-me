@@ -27,6 +27,8 @@ a:hover {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
+
+
 .navbar-brand {
     float: left;
     display: block;
@@ -51,7 +53,7 @@ a:hover {
     float: left;
     display: block;
     color: white;
-    text-align: center;
+
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
@@ -93,7 +95,12 @@ a:hover {
 }
 
 
+.main-link {
+    font-size: 38px;
+    margin-top: 4%;
+    margin-left: 3vw;
 
+}
 
 
 
