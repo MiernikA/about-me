@@ -9,7 +9,6 @@ function BlockSite() {
 
     return (
         <div className="BlockSite">
-            <p>test</p>
             {allProjects.map((proj) => (
                 <Block name={proj.name} desc={proj.desc} repo={proj.repo} play={proj.checkout} tags={proj.tags} gif={proj.gif} />
             ))}
