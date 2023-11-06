@@ -14,8 +14,8 @@ function NavBar() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link className="navbar-brand" as={Link} to="/about-me/"><b>Portfolio Site</b> <p>Miernik Adrian</p></Nav.Link>
-                        <Nav.Link className="main-link" as={Link} to="/temp">Temp</Nav.Link>
-                        <Nav.Link className="main-link" as={Link} to="/temp">Temp</Nav.Link>
+                        {/* <Nav.Link className="main-link" as={Link} to="/temp">Temp</Nav.Link>
+                        <Nav.Link className="main-link" as={Link} to="/temp">Temp</Nav.Link> */}
                     </Nav>
                 </Navbar.Collapse>
             </Container>

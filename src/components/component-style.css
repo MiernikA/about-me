@@ -111,17 +111,15 @@ a:hover {
 
 .describe {
     flex: 1;
-    /* Allow the description to take up remaining space */
     font-size: 20px;
     width: 70%;
     margin-right: 20%;
-    /* Adjust the width */
 }
 
 .card-img-top {
     float: left;
     margin-top: -3%;
-    width: 30%;
+    width: 500px;
     height: 25%;
     border-radius: 25px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
