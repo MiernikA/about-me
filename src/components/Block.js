@@ -35,7 +35,7 @@ function Block(props) {
                             <li key={props.play}>
                                 {!props.play.includes("youtube") ? (
                                     <Card.Link href={props.play} target="_blank">Try it yourself!</Card.Link>
-                                ) : <Card.Link href={props.play} target="_blank">See how it works!</Card.Link>}
+                                ) : <Card.Link href={window.alert("Currently nor working :c")} target="_blank">See how it works!</Card.Link>}
                             </li>
                         </ul>
                     </Card.Text>
