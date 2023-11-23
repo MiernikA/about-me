@@ -11,6 +11,10 @@ function Block(props) {
         setShowFullText(!showFullText);
     };
 
+    const tmp = () => {
+        window.alert("Currently nor working :c")
+    };
+
     return (
         <Card>
             <Card.Body>
@@ -31,11 +35,11 @@ function Block(props) {
                     )}
                         <hr />
                         <ul>
-                            <li key={props.repo}><Card.Link href={props.repo} target="_blank">Check out repository</Card.Link><br /></li>
+                            <li key={props.repo}><Card.Link href={props.repo} target="_blank">Check out repository!</Card.Link><br /></li>
                             <li key={props.play}>
                                 {!props.play.includes("youtube") ? (
                                     <Card.Link href={props.play} target="_blank">Try it yourself!</Card.Link>
-                                ) : <Card.Link href={window.alert("Currently nor working :c")} target="_blank">See how it works!</Card.Link>}
+                                ) : <Card.Link href={"#"} onClick={tmp}>See how it works!</Card.Link>}
                             </li>
                         </ul>
                     </Card.Text>

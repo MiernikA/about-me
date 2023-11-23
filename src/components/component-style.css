@@ -140,3 +140,11 @@ a:hover {
     margin-right: 15px;
 
 }
+
+.tmp-info {
+    text-align: center;
+    font-size: 28px;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

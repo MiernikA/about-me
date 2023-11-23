@@ -8,7 +8,10 @@ function BlockSite() {
     console.log(allProjects)
 
     return (
+
         <div className="BlockSite">
+            <p className='tmp-info'>The page is currently in constant development, with new functionalities and new projects. Stay tuned.</p>
+
             {allProjects.map((proj) => (
                 <Block name={proj.name} desc={proj.desc} repo={proj.repo} play={proj.checkout} tags={proj.tags} gif={proj.gif} />
             ))}
