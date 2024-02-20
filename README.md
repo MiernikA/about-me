@@ -1,9 +1,52 @@
-# React + Vite
+```
+# My Portfolio Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a portfolio website built using [Vite](https://vitejs.dev/), a blazing fast frontend build tool.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-"# tmp" 
+To get a local copy of this project up and running, follow these simple steps.
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/your-portfolio.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd your-portfolio
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+### Usage
+
+To start the development server:
+
+```sh
+npm run dev
+```
+
+This will start the development server at `http://localhost:3000`.
+
+## Deployment
+
+To build the project for production:
+
+```sh
+npm run build
+```
+
+This will generate a production-ready build in the `dist` directory.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+```
