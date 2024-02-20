@@ -82,6 +82,7 @@ const Wall = ({ rows, columns, spacing, isMobile }) => {
       const offsetY = e.clientY + window.scrollY;
       popoff.style.left = offsetX + "px";
       popoff.style.top = offsetY + "px";
+      popoff.classList.add('select-none')
       popoff.classList.remove('hidden')
       popoff.textContent = technologies[ct].name;
 
