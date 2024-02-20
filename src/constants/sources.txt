@@ -1,0 +1,21 @@
+All linked items herein do not belong to me and have been used non-commercially to enhance the graphical presentation of the portfolio.
+
+Models:
+
+SpaceStation: (license in public/spacestation)
+https://sketchfab.com/3d-models/colonization-ship-uei-opportunity-9fd1f31d74c941538d11d1e98d8866bf
+
+Astronaut Helmet: (license in public/helmet)
+https://sketchfab.com/3d-models/cosmonaut-helmet-revisited-f95b375749d24a47be676447648aee1b
+
+
+Icons and images:
+
+Collection of icons:
+https://www.flaticon.com/authors/ilham-fitrotul-hayat
+
+
+
+When it comes to the graphics used in the backgrounds, it has been challenging for me to identify the appropriate authors. 
+I have seen these images used in other projects without a clear source. 
+I believe they are modified publicly available NASA images that I have graphically adapted to suit my needs.
