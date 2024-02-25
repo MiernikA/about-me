@@ -1,7 +1,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
+import CanvasLoader from "../Loader";
 
 const Spacestation = ({ isMobile }) => {
   const model = useGLTF("./spacestation/scene.gltf");
@@ -55,17 +55,17 @@ const SpacestationCanvas = () => {
       camera={{ position: [25, 25, 25] }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <Suspense>
+      <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-
+        <Spacestation isMobile={isMobile} />
       </Suspense>
 
 
-      <Spacestation isMobile={isMobile} />
+
       <Preload all />
     </Canvas>
   );
