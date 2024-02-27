@@ -51,7 +51,7 @@ const SpacestationCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      dpr={[10, 2]}
+      dpr={[1, 2]}
       camera={{ position: [25, 25, 25] }}
       gl={{ preserveDrawingBuffer: true }}
     >
