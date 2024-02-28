@@ -25,4 +25,4 @@ To run this project locally, follow these steps:
    ```bash
    npm run dev
    
-4. Open your browser and go to `http://localhost:3001` to view the site.
+4. Open your browser and go to `http://localhost:5173` to view the site.
