@@ -48,8 +48,8 @@ const Droid = ({ isMobile }) => {
 
       <primitive
         object={model.scene}
-        scale={isMobile ? 0.003 : 0.06}
-        position={isMobile ? [-20, -2, 6] : [0, -17, -12]}
+        scale={isMobile ? 0.04 : 0.06}
+        position={isMobile ? [0, -15, -5] : [0, -17, -12]}
         rotation={[0.3, -0.2, 0]}
       />
     </mesh>

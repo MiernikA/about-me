@@ -48,8 +48,8 @@ const Gunship = ({ isMobile }) => {
       <pointLight intensity={1600} position={[0, -20, 0]} />
       <primitive
         object={model.scene}
-        scale={isMobile ? 0.003 : 3}
-        position={isMobile ? [-20, -2, 6] : [5, -8, -15]}
+        scale={isMobile ? 2.5 : 3}
+        position={isMobile ? [-10, -10, -15] : [5, -8, -15]}
         rotation={[0.2, 0.1, -0.4]}
       />
     </mesh>
