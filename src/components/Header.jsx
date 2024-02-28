@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import { styles } from '../styles'
-import { SpacestationCanvas } from './canvas'
+import Randomizer from './Randomizer';
 
 const Header = () => {
   return (
@@ -27,7 +27,7 @@ const Header = () => {
       </div>
 
 
-      <SpacestationCanvas />
+      <Randomizer />
 
 
       <div className='absolute  bottom-32 w-full flex justify-center items-center'>

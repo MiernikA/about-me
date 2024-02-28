@@ -8,7 +8,7 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Sources from './Sources';
 
-import { WallCanvas, SpacestationCanvas, Helmet } from './canvas';
+import { WallCanvas, CargoCanvas, Cb2Canvas, DroiodCanvas, Helmet } from './canvas';
 
 export {
   Navbar,
@@ -20,8 +20,11 @@ export {
   Contact,
   Sources,
 
+
   //-----------
   WallCanvas,
-  SpacestationCanvas,
+  CargoCanvas,
+  Cb2Canvas,
+  DroiodCanvas,
   Helmet,
 }
