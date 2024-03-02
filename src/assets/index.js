@@ -46,8 +46,7 @@ import ps from "./tech/ps.png";
 import snake_logo from "./proj_gif/snake.gif"
 import balls_logo from "./proj_gif/balls.gif"
 import crud_logo from "./proj_gif/crud.gif"
-
-
+import mp3_logo from "./proj_gif/mp3.gif"
 
 
 export {
@@ -91,4 +90,5 @@ export {
   snake_logo,
   crud_logo,
   balls_logo,
+  mp3_logo,
 };

@@ -38,6 +38,7 @@ import {
   snake_logo,
   balls_logo,
   crud_logo,
+  mp3_logo,
 
 } from "../assets";
 
@@ -273,6 +274,36 @@ const projects = [
     image: balls_logo,
     source_code_link: "https://github.com/MiernikA/Balls-Game",
     demo_code_link: "https://miernika.github.io/Balls-Game/",
+  },
+  {
+    name: "Mp3 Player",
+    description:
+      "A project fulfilling the role of a music player with an interface and the capability of uploading custom playlists.\n\n The majority of the project is centered around the NodeJS backend, which handles the reading of music albums from the internal project folder and the storage of user-uploaded albums. On the frontend side, a simple CSS with additional animations is employed.",
+    tags: [
+      {
+        name: "Highschool-Project",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "App",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Full-Stack",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: mp3_logo,
+    source_code_link: "https://github.com/MiernikA/Mp3-player",
+    demo_code_link: "https://miernika.github.io/mp3-player-demo/",
   },
   {
     name: "Crud Canals",
