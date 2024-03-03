@@ -329,7 +329,7 @@ const projects = [
     ],
     image: crud_logo,
     source_code_link: "https://github.com/MiernikA/Crud-Canals",
-    demo_code_link: "https://github.com/MiernikA/Crud-Canals",
+    demo_code_link: "https://miernika.github.io/Crud-Canals-demo/",
   },
 ];
 
