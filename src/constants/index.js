@@ -308,7 +308,7 @@ const projects = [
   {
     name: "Crud Canals",
     description:
-      "A CRUD (Create, Read, Update, Delete) application designed for visualizing the percentage distribution of a channel based on its assigned value on a pie chart graph. \n\nThe entire backend of the application is built using PHP Laravel, complete with integrated tests. On the other hand, the front end utilizes React on Vite templates, and the entire system relies on a local database.",
+      "A CRUD (Create, Read, Update, Delete) application designed for visualizing the percentage distribution of a channel based on its assigned value on a pie chart graph. \n\nThe entire backend of the application is built using PHP Laravel, complete with integrated tests. On the other hand, the front end utilizes React on Vite templates, and the entire system relies on a local database.\n\nThe project is currently deprecated (it was developed in PHP 7.2). However, you can still see how it worked by checking out the demo version.",
     tags: [
       {
         name: "React",
