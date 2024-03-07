@@ -249,7 +249,7 @@ const projects = [
     demo_code_link: "https://miernika.github.io/Snake-Game/",
   },
   {
-    name: "Balls Game",
+    name: "Color Lines",
     description:
       `Another project for the Client Application is a game that is a replica of the widely available ball game. \n\nThe game involves arranging balls of the same color in rows, columns, or diagonally and eliminating them in groups of five. 
       From a technical standpoint, it involves a grid of div elements generated at random positions with randomly colored balls.\n Win condition based on the number of balls on the board, and the core of the game is the Depth-First Search (DFS) algorithm for finding paths. \nThe project is essentially 100% TypeScript.`,
@@ -272,8 +272,8 @@ const projects = [
       },
     ],
     image: balls_logo,
-    source_code_link: "https://github.com/MiernikA/Balls-Game",
-    demo_code_link: "https://miernika.github.io/Balls-Game/",
+    source_code_link: "https://github.com/MiernikA/Color-Lines",
+    demo_code_link: "https://miernika.github.io/Color-Lines/",
   },
   {
     name: "Mp3 Player",
