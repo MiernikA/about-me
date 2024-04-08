@@ -1,8 +1,9 @@
 import React, { Suspense, useEffect, useState, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
+import CanvasLoader from "../Loader";
 
-const Spacestation = ({ isMobile }) => {
+const HelmetObject = ({ isMobile }) => {
   const computer = useGLTF("./helmet/scene.gltf");
   const meshRef = useRef();
   const floatingSpeed = 0.0025
@@ -60,8 +61,9 @@ const Helmet = () => {
         camera={{ position: [135, 135, 135] }}
         gl={{ preserveDrawingBuffer: true }}
       >
-        <Spacestation isMobile={isMobile} />
-
+        <Suspense fallback={<CanvasLoader />}>
+          <HelmetObject isMobile={isMobile} />
+        </Suspense>
       </Canvas>
     </div>
   );
