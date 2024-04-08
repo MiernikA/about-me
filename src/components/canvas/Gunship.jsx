@@ -1,11 +1,11 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-const Gunship = ({ isMobile }) => {
+const Gunship = ({ isMobile, animationPaused }) => {
   const model = useGLTF("./gunship/scene.gltf");
-  const floatingSpeed = 0.300005
+  const floatingSpeed = 0.300005;
   const rotationSpeed = 0.015;
   const [rotationAngle, setRotationAngle] = useState(0);
   const [floatingBase, setFloating] = useState(0);
@@ -13,36 +13,42 @@ const Gunship = ({ isMobile }) => {
   const [rotationDirection, setRotationDirection] = useState(1);
 
   useFrame((state, delta) => {
-    setFloating((prevPos) => {
-      let newDirection = direction;
-      if (prevPos > 2) {
-        newDirection = -1;
-        setDirection(newDirection);
-      } else if (prevPos < -2) {
-        newDirection = 1;
-        setDirection(newDirection);
-      }
-      return prevPos + floatingSpeed * newDirection * delta;
-    });
+    if (!animationPaused) {
+      setFloating((prevPos) => {
+        let newDirection = direction;
+        if (prevPos > 2) {
+          newDirection = -1;
+          setDirection(newDirection);
+        } else if (prevPos < -2) {
+          newDirection = 1;
+          setDirection(newDirection);
+        }
+        return prevPos + floatingSpeed * newDirection * delta;
+      });
 
-    setRotationAngle((prevAngle) => {
-      let newRotationSpeed = rotationSpeed;
-      let newRotationDirection = rotationDirection;
-      if (prevAngle > 0.2) {
-        newRotationDirection = -1
-        setRotationDirection(newRotationDirection);
-      }
-      else if (prevAngle < -0.6) {
-        newRotationDirection = 1;
-        setRotationDirection(newRotationDirection);
-      }
+      setRotationAngle((prevAngle) => {
+        let newRotationSpeed = rotationSpeed;
+        let newRotationDirection = rotationDirection;
+        if (prevAngle > 0.2) {
+          newRotationDirection = -1;
+          setRotationDirection(newRotationDirection);
+        } else if (prevAngle < -0.6) {
+          newRotationDirection = 1;
+          setRotationDirection(newRotationDirection);
+        }
 
-      const newAngle = prevAngle + newRotationSpeed * delta * newRotationDirection;
-      return newAngle >= Math.PI * 2 ? 0 : newAngle;
-    });
+        const newAngle =
+          prevAngle + newRotationSpeed * delta * newRotationDirection;
+        return newAngle >= Math.PI * 2 ? 0 : newAngle;
+      });
+    }
   });
+
   return (
-    <mesh position={[floatingBase, -floatingBase, -floatingBase]} rotation={[rotationAngle / 6, rotationAngle, rotationAngle / 4]}>
+    <mesh
+      position={[floatingBase, -floatingBase, -floatingBase]}
+      rotation={[rotationAngle / 6, rotationAngle, rotationAngle / 4]}
+    >
       <hemisphereLight intensity={0.15} />
       <pointLight intensity={1000} position={[0, 0, 0]} />
       <pointLight intensity={1600} position={[0, -20, 0]} />
@@ -58,6 +64,8 @@ const Gunship = ({ isMobile }) => {
 
 const GunshipCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [animationPaused, setAnimationPaused] = useState(false);
+  const animationRef = useRef();
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
@@ -69,8 +77,15 @@ const GunshipCanvas = () => {
 
     mediaQuery.addEventListener("change", handleMediaQueryChange);
 
+    const handleVisibilityChange = () => {
+      setAnimationPaused(document.hidden);
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
   }, []);
 
@@ -87,11 +102,8 @@ const GunshipCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Gunship isMobile={isMobile} />
+        <Gunship isMobile={isMobile} animationPaused={animationPaused} />
       </Suspense>
-
-
-
       <Preload all />
     </Canvas>
   );
