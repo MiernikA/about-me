@@ -4,6 +4,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Gunship = ({ isMobile, animationPaused }) => {
+
   const model = useGLTF("./gunship/scene.gltf");
   const floatingSpeed = 0.300005;
   const rotationSpeed = 0.015;
