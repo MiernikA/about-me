@@ -20,9 +20,13 @@ To run this project locally, follow these steps:
 2. Navigate into the project directory:
    ```bash
    cd about-me
-
-3. Start the development server:
+   
+3. Install dependencies:
+   ```bash
+   npm install
+   
+4. Start the development server:
    ```bash
    npm run dev
    
-4. Open your browser and go to `http://localhost:5173` to view the site.
+5. Open your browser and go to `http://localhost:5173` to view the site.
