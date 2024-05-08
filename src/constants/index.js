@@ -39,6 +39,7 @@ import {
   balls_logo,
   crud_logo,
   mp3_logo,
+  weather_logo,
 
 } from "../assets";
 
@@ -270,7 +271,7 @@ const projects = [
         color: "yellow-text-gradient",
       },
     ],
-    image: snake_logo,
+    image: weather_logo,
     source_code_link: "https://github.com/MiernikA/weather-app",
     demo_code_link: "https://weather-app-sigma-navy.vercel.app/",
   },
