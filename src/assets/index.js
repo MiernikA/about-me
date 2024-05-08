@@ -44,6 +44,7 @@ import ps from "./tech/ps.png";
 
 //proj
 import snake_logo from "./proj_gif/snake.gif"
+import weather_logo from "./proj_gif/weather.gif"
 import balls_logo from "./proj_gif/balls.gif"
 import crud_logo from "./proj_gif/crud.gif"
 import mp3_logo from "./proj_gif/mp3.gif"
@@ -87,7 +88,9 @@ export {
   aptiv,
   edualy,
 
+  
   snake_logo,
+  weather_logo,
   crud_logo,
   balls_logo,
   mp3_logo,
